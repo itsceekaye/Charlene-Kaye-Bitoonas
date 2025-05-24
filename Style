@@ -1,0 +1,94 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #007acc;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #66ccff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+header button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer • Designer • Creator</p>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a developer passionate about creating clean, responsive web experiences. Welcome to my personal website!</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>My Cool Project</h3>
+      <p>A short description of something awesome I built.</p>
+      <a href="https://github.com/yourusername/project">View on GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://github.com/yourusername">GitHub</a> •
+    <a href="https://linkedin.com/in/yourname">LinkedIn</a> •
+    <a href="mailto:youremail@example.com">Email</a>
+  </footer>
+</body>
+</html>
